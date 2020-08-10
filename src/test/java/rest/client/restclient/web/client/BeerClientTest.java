@@ -25,9 +25,9 @@ class BeerClientTest {
     @Test
     void saveNewBeer(){
         BeerDto beerDto = BeerDto.builder().id(UUID.randomUUID()).build();
-       URI uri = beerClient.saveNewBeer(beerDto);
-       assertNotNull(uri);
-       System.out.println(uri.toString());
+        URI uri = beerClient.saveNewBeer(beerDto);
+        assertNotNull(uri);
+        System.out.println(uri.toString());
     }
 
     @Test
